@@ -1,0 +1,259 @@
+body {
+  background: url(/src/beach.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 560px 980px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.current {
+  text-align: center;
+  font-family: "Square Peg", cursive;
+  font-size: 40px;
+  font-weight: bolder;
+  color: hsl(198, 33%, 35%);
+}
+#question {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Square Peg", cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  color: rgb(201, 94, 142);
+}
+
+.umbrella {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+#date {
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Baloo 2", cursive;
+  font-size: 27px;
+  color: #8f3f86;
+  max-width: 500px;
+}
+
+#current-location-button {
+  display: block;
+  background-color: #c95e8e;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 4px 4px 4px;
+  width: 120px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+}
+
+#current-location-button:hover {
+  background-color: #99428f;
+  font-size: 11px;
+  transition: all 0.5s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0.5px;
+  font-family: "Square Peg", cursive;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #8f3f86;
+}
+
+.one {
+  position: relative;
+  margin: 0 auto;
+  background-color: rgb(243, 252, 250);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 70%;
+  overflow: hidden;
+  width: 500px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#description {
+  margin: 0 auto;
+  color: rgb(0, 93, 115);
+  font-family: "Square Peg", cursive;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+.box {
+  background-color: rgb(250, 229, 240);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#city {
+  margin: 20px auto;
+  text-align: center;
+  font-size: 38px;
+  font-weight: bolder;
+  font-family: "Square Peg", cursive;
+  color: rgb(0, 93, 115);
+}
+
+h4 {
+  font-size: 37px;
+}
+
+#city-temp {
+  text-align: center;
+  color: rgb(153, 66, 143);
+  font-family: "Baloo 2", cursive;
+  font-size: 20px;
+  margin: 0px;
+}
+
+#humidity {
+  text-align: center;
+  color: rgb(201, 94, 142);
+  font-family: "Baloo 2", cursive;
+  font-size: 15px;
+  margin: 0px;
+}
+#wind-speed {
+  text-align: center;
+  color: rgb(201, 94, 142);
+  font-family: "Baloo 2", cursive;
+  font-size: 15px;
+}
+
+.search-form {
+  text-align: center;
+  margin-top: 30px;
+  padding-bottom: 25px;
+}
+
+#city-input {
+  margin: 0 auto;
+  font-size: 15px;
+  height: 22px;
+  font-weight: lighter;
+}
+
+.button {
+  background-color: #78bccf;
+  border: 0px;
+  border-radius: 60px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 20%);
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 2px 2px 2px;
+  width: 25px;
+  margin: 0 auto;
+}
+
+.button:hover {
+  background-color: hsl(194, 55%, 81%);
+  font-size: 12px;
+  transition: all 0.5s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #156b7f;
+}
+h3 {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  font-size: 18px;
+  font-weight: bolder;
+  color: #156b7f;
+}
+
+.today-forecast {
+  display: flex;
+  font-size: 15px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  width: 250px;
+  font-family: "Comfortaa", cursive;
+  color: #9f76b8;
+  background: #f3fcfa;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.icontoday {
+  font-size: 40px;
+  color: #99428f;
+}
+
+.days {
+  justify-content: center;
+  text-align: center;
+  margin: 80px auto;
+  margin-top: 7px;
+  position: relative;
+  width: 55%;
+  max-width: 500px;
+  height: 185px;
+  border-radius: 9px;
+  padding: 20px;
+  background-color: #f3fcfa;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.day {
+  font-family: "Comfortaa", cursive;
+  color: hsl(193, 34%, 45%);
+  font-size: 17px;
+}
+
+.day:hover {
+  color: rgb(153, 66, 143);
+  transition: all 0.5s ease-in-out;
+  font-size: 22px;
+}
+
+.icon {
+  font-size: 20px;
+  color: #78bccf;
+}
+.icon:hover {
+  color: rgb(153, 66, 143);
+  transition: all 0.5s ease-in-out;
+  font-size: 22px;
+}
+.temp5 {
+  font-size: 17px;
+  color: #4490a5;
+}
+
+.temp5:hover {
+  color: rgb(153, 66, 143);
+  transition: all 0.5s ease-in-out;
+  font-size: 22px;
+}
+
+.coder {
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(25, 108, 127);
+}

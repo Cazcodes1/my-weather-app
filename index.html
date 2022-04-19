@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap"
+      rel="stylesheet"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/21b3efafb0.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+        <div class="current-place">
+        <span id="date"> </span>
+        <br />
+        <br />
+        <button id="current-location-button">Current Location</button>
+        <br />
+        <br />
+        <h1></h1>
+      
+      </div>
+      <br />
+      <br />
+      <div class="container one">
+        <div class="cityname"></div>
+        <div class="box">
+          <p id="city"></p>
+          <p id="city-temp"><h4></h4></p>
+          <p id="humidity"></p>
+          <p id="wind-speed"></p>
+        </div>
+
+        <div id="container-two">
+          <div id="question">Search a weather forecast ☂</div>
+
+          <form class="search-form" id="search-form">
+            <input
+              type="text"
+              placeholder=" Enter City"
+              autocomplete="off"
+              autofocus="on"
+              id="city-input"
+            />
+            <input type="submit" value="🔍" class="button" />
+          </form>
+        </div>
+      </div>
+      <br />
+      <br />
+      
+      <h2>What's it like there?</h2>
+      <br />
+      <div class="row today-forecast">
+        <div class="col1"></div>
+        <span id="description"></span>
+        <div class="icontoday">
+          <i class="fa-solid fa-cloud-sun"></i></i>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <h3>What's the 5-day Forecast?</h3>
+      <br />
+      <div class="container days">
+        <div class="row fri">
+          <div class="col-4 day">Fri</div>
+          <div class="col-4 icon">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+          </div>
+          <div class="col-4 temp5">10°</div>
+        </div>
+        <div class="row sat">
+          <div class="col-4 day">Sat</div>
+          <div class="col-4 icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="col-4 temp5">12°</div>
+        </div>
+        <div class="row sun">
+          <div class="col-4 day">Sun</div>
+          <div class="col-4 icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          <div class="col-4 temp5">13°</div>
+        </div>
+        <div class="row mon">
+          <div class="col-4 day">Mon</div>
+          <div class="col-4 icon">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+          </div>
+          <div class="col-4 temp5">9°</div>
+        </div>
+        <div class="row tue">
+          <div class="col-4 day">Tues</div>
+          <div class="col-4 icon">
+            <i class="fa-solid fa-cloud-showers-heavy"></i>
+          </div>
+          <div class="col-4 temp5">9°</div>
+          <br />
+          <br />
+          <br />
+          <br />
+          <span class="coder">Coded by Caroline Weir</span>
+          </div>
+      </div>
+    </div>
+  </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
