@@ -255,5 +255,6 @@ h3 {
 
 .coder {
   font-family: "Courier New", Courier, monospace;
+  font-size: small;
   color: rgb(25, 108, 127);
 }
