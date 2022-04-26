@@ -49,6 +49,9 @@ function displayWeatherCondition(response) {
   let description = document.querySelector("#description");
   let descriptionCity = response.data.weather[0].main;
   description.innerHTML = `${descriptionCity}`;
+
+  let icontoday = document.querySelector("icontoday");
+  icontoday.setAttribute("src", `http://openweathermap.org/img/wn/10d@2x.png`);
 }
 
 function searchCity(city) {

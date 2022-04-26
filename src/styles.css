@@ -202,8 +202,11 @@ h3 {
 }
 
 .icontoday {
-  font-size: 40px;
-  color: #99428f;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  height: 70%;
+  filter: hue-rotate(313deg);
 }
 
 .days {
