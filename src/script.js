@@ -50,12 +50,13 @@ function displayWeatherCondition(response) {
   let descriptionCity = response.data.weather[0].main;
   description.innerHTML = `${descriptionCity}`;
 
-  let icontoday = document.querySelector("icontoday");
-  icontoday.setAttribute(
+  let todayicon = document.querySelector("#today-icon");
+
+  todayicon.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  icontoday.setAttribute("alt", `${descriptionCity}`);
+  todayicon.setAttribute("alt", response.data.weather[0].main);
 }
 
 function searchCity(city) {
