@@ -2,14 +2,11 @@ let now = new Date();
 let datetoday = document.querySelector("#date");
 let date = now.getDate();
 let hours = now.getHours();
-let min = now.getMinutes();
-
-if (min < 10) {
-  min = "0" + min;
-} else {
-  min = min + "";
-}
 let minutes = now.getMinutes();
+
+if (minutes < 10) {
+  minutes = `0$(minutes)`;
+}
 
 let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 let day = days[now.getDay()];
