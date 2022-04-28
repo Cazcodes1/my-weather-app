@@ -30,7 +30,7 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
-datetoday.innerHTML = `${day}, ${date} ${month} ${hours}:${minutes}`;
+datetoday.innerHTML = `Last updated: ${day}, ${date} ${month} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
@@ -62,7 +62,7 @@ function displayWeatherCondition(response) {
 function searchCity(city) {
   let apiKey = "ff273393a3d61766552e5813cf268b6c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayWeatherCondition);
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 function handleSubmit(event) {
@@ -94,3 +94,5 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+searchCity("New York");

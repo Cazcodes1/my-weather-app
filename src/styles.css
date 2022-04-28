@@ -32,12 +32,12 @@ body {
 }
 
 #date {
-  padding-top: 30px;
+  padding-top: 50px;
   display: block;
   margin: 0 auto;
   text-align: center;
   font-family: "Baloo 2", cursive;
-  font-size: 27px;
+  font-size: 15px;
   color: #8f3f86;
   max-width: 500px;
 }
@@ -90,7 +90,7 @@ h1 {
 }
 
 #description {
-  margin: 0 auto;
+  margin: 10px auto;
   color: rgb(0, 93, 115);
   font-family: "Square Peg", cursive;
   font-size: 36px;
@@ -182,7 +182,6 @@ h3 {
   text-align: center;
   font-family: "Comfortaa", cursive;
   font-size: 18px;
-  font-weight: bolder;
   color: #156b7f;
 }
 
@@ -201,12 +200,13 @@ h3 {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
-.icontoday {
+#today-icon {
   display: block;
   margin: 0 auto;
-  width: 60%;
-  height: 60%;
-  filter: hue-rotate(313deg);
+  width: 50%;
+  height: 63%;
+  filter: hue-rotate(-50deg) saturate(132%);
+  padding: 0px;
 }
 
 .days {
@@ -254,6 +254,10 @@ h3 {
   color: rgb(153, 66, 143);
   transition: all 0.5s ease-in-out;
   font-size: 22px;
+}
+
+.ref {
+  text-decoration: none;
 }
 
 .coder {
