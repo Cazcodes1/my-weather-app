@@ -25,15 +25,16 @@ let months = [
   "Nov",
   "Dec",
 ];
+
 let month = months[now.getMonth()];
 
 datetoday.innerHTML = `Last updated: ${day}, ${date} ${month} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
+
   let cityTemp = document.querySelector("#city-temp");
-  let tempcity = Math.round(response.data.main.temp);
-  cityTemp.innerHTML = `Temp ${tempcity}°c`;
+  cityTemp.innerHTML = Math.round(celsiusTemperature);
 
   let humidity = document.querySelector("#humidity");
   let humidityCity = response.data.main.humidity;
@@ -46,6 +47,8 @@ function displayWeatherCondition(response) {
   let description = document.querySelector("#description");
   let descriptionCity = response.data.weather[0].main;
   description.innerHTML = `${descriptionCity}`;
+
+  celsiusTemperature = response.data.main.temp;
 
   let todayicon = document.querySelector("#today-icon");
 
@@ -68,8 +71,33 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let tempCity = document.querySelector("#city-temp");
+  celsiuslink.classList.remove("active");
+  fahrenheitlink.classList.add("active");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  tempCity.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  celsiuslink.classList.add("active");
+  fahrenheitlink.classList.remove("active");
+  let tempCity = document.querySelector("#city-temp");
+  tempCity.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
+
+let fahrenheitlink = document.querySelector("#fahrenheit-link");
+fahrenheitlink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiuslink = document.querySelector("#celsius-link");
+celsiuslink.addEventListener("click", displayCelsiusTemperature);
 
 function showWeather(response) {
   let h1 = document.querySelector("h1");

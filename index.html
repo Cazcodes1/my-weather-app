@@ -58,13 +58,17 @@
       <br />
       <br />
       <div class="container one">
-        <div class="cityname"></div>
-        <div class="box">
-          <p id="city"></p>
-          <p id="city-temp"><h4></h4></p>
-          <p id="humidity"></p>
-          <p id="wind-speed"></p>
-        </div>
+          <div class="clearfix box">
+          <div id="city">
+          <span class="cityname"></span>
+          <span id="city-temp"><h4></h4></span>
+          <span class="units">
+            <a href="#" id="celsius-link" class="active">°C</a> | 
+          <a href="#" id="fahrenheit-link">°F</a> 
+          <span id="humidity"></span>
+          <span id="wind-speed"></span>
+          </div>
+          </div>
 
         <div id="container-two">
           <div id="question">Search a weather forecast ☂</div>
