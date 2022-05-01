@@ -33,6 +33,7 @@ datetoday.innerHTML = `Last updated: ${day}, ${date} ${month} ${hours}:${minutes
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
 
+  celsiusTemperature = response.data.main.temp;
   let cityTemp = document.querySelector("#city-temp");
   cityTemp.innerHTML = Math.round(celsiusTemperature);
 
@@ -47,8 +48,6 @@ function displayWeatherCondition(response) {
   let description = document.querySelector("#description");
   let descriptionCity = response.data.weather[0].main;
   description.innerHTML = `${descriptionCity}`;
-
-  celsiusTemperature = response.data.main.temp;
 
   let todayicon = document.querySelector("#today-icon");
 
