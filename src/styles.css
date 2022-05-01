@@ -210,7 +210,8 @@ h3 {
   margin: 0 auto;
   width: 50%;
   height: 63%;
-  filter: hue-rotate(-50deg) saturate(132%);
+  filter: hue-rotate(-50deg) saturate(132%) brightness(95%);
+  forced-color-adjust: pink;
   padding: 0px;
 }
 
