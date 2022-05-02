@@ -212,7 +212,7 @@ h3 {
   margin: 0 auto;
   width: 50%;
   height: 63%;
-  filter: hue-rotate(-50deg) saturate(132%) opacity(95%);
+  filter: hue-rotate(-50deg) saturate(132%) opacity(95%) sepia(40%) !important;
   padding: 0px;
 }
 
