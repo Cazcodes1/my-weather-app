@@ -216,36 +216,44 @@ h3 {
   padding: 0px;
 }
 
-.day {
-  font-family: "Comfortaa", cursive;
-  color: hsl(193, 34%, 45%);
-  font-size: 17px;
+.fiveday {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  background-color: rgb(142, 221, 204);
+  border-radius: 10px;
+  width: 420px;
+  align-items: stretch;
+  justify-content: space-around;
 }
 
-.day:hover {
-  color: rgb(153, 66, 143);
-  transition: all 0.5s ease-in-out;
-  font-size: 22px;
+.row5day {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+  justify-content: space-around;
+  max-width: 450px;
 }
 
-.icon {
-  font-size: 20px;
-  color: #78bccf;
+#forecast {
+  font-family: "Baloo 2", cursive;
+  text-align: center;
+  font-size: 18px;
+  color: #156b7f;
 }
-.icon:hover {
-  color: rgb(153, 66, 143);
-  transition: all 0.5s ease-in-out;
-  font-size: 22px;
-}
-.temp5 {
-  font-size: 17px;
-  color: #4490a5;
-}
-
-.temp5:hover {
-  color: rgb(153, 66, 143);
-  transition: all 0.5s ease-in-out;
-  font-size: 22px;
+.weather-forecast-temperatures {
+  font-family: "Baloo 2", cursive;
+  color: #7a2c86;
+  filter: none;
+  text-align: center;
+  font-size: 16px;
 }
 
 .ref {
