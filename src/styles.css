@@ -247,6 +247,7 @@ h3 {
 }
 
 #icons {
+  text-align: center;
   filter: hue-rotate(-50deg) saturate(132%) opacity(98%) sepia(40%) !important;
 }
 #forecast {
