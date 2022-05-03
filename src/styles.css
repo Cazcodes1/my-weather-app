@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: 560px 980px;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 20px;
 }
 
@@ -32,12 +32,12 @@ body {
 }
 
 #date {
-  padding-top: 60px;
+  padding-top: 50px;
   display: block;
   margin: 0 auto;
   text-align: center;
   font-family: "Baloo 2", cursive;
-  font-size: 15px;
+  font-size: 18px;
   color: #8f3f86;
   max-width: 500px;
 }

@@ -28,7 +28,7 @@ let months = [
 
 let month = months[now.getMonth()];
 
-datetoday.innerHTML = `Last updated: ${day}, ${date} ${month} ${hours}:${minutes}`;
+datetoday.innerHTML = `Updated: ${day}, ${date} ${month} ${hours}:${minutes}`;
 
 function formatDay(timestamp) {
   let date = new Date(timestamp * 1000);
