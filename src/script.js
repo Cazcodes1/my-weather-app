@@ -43,7 +43,7 @@ function displayWeatherCondition(response) {
 
   let windspeed = document.querySelector("#wind-speed");
   let speedCity = Math.round(response.data.wind.speed);
-  windspeed.innerHTML = `Wind-speed ${speedCity} km/h`;
+  windspeed.innerHTML = `Wind-speed ${speedCity} m/h`;
 
   let description = document.querySelector("#description");
   let descriptionCity = response.data.weather[0].main;
@@ -70,33 +70,8 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let tempCity = document.querySelector("#city-temp");
-  celsiuslink.classList.remove("active");
-  fahrenheitlink.classList.add("active");
-  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-  tempCity.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-function displayCelsiusTemperature(event) {
-  event.preventDefault();
-  celsiuslink.classList.add("active");
-  fahrenheitlink.classList.remove("active");
-  let tempCity = document.querySelector("#city-temp");
-  tempCity.innerHTML = Math.round(celsiusTemperature);
-}
-
-let celsiusTemperature = null;
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
-
-let fahrenheitlink = document.querySelector("#fahrenheit-link");
-fahrenheitlink.addEventListener("click", displayFahrenheitTemperature);
-
-let celsiuslink = document.querySelector("#celsius-link");
-celsiuslink.addEventListener("click", displayCelsiusTemperature);
 
 function showWeather(response) {
   let h1 = document.querySelector("h1");

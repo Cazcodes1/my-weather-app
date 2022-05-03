@@ -269,6 +269,7 @@ h3 {
 }
 
 .coder {
+  text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: small;
   color: rgb(25, 108, 127);
@@ -278,15 +279,4 @@ h3 {
   text-align: center;
   font-size: 14px;
   color: #8f3f86;
-}
-
-#celsius-link {
-  text-decoration: none;
-  color: #8f3f86;
-  cursor: default;
-}
-#farenheit-link {
-  text-decoration: none;
-  color: #7a2370;
-  cursor: default;
 }
