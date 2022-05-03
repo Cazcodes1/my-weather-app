@@ -278,6 +278,10 @@ h3 {
   text-decoration: none;
 }
 
+#ref {
+  text-decoration: none;
+}
+
 .coder {
   text-align: center;
   font-family: "Courier New", Courier, monospace;
