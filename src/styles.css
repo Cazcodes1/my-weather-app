@@ -104,6 +104,7 @@ h1 {
   flex-direction: column;
   margin-bottom: 10px;
   border-radius: 5px;
+  padding-bottom: 10px;
 }
 
 #city {
@@ -193,11 +194,13 @@ h3 {
 
 .today-forecast {
   display: flex;
+  flex-wrap: flex;
   font-size: 15px;
   text-align: center;
   position: relative;
   margin: 0 auto;
   width: 250px;
+  max-width: 80%;
   font-family: "Comfortaa", cursive;
   color: #9f76b8;
   background: rgb(201, 216, 151);
@@ -212,7 +215,7 @@ h3 {
   margin: 0 auto;
   width: 50%;
   height: 63%;
-  filter: hue-rotate(-50deg) saturate(132%) opacity(95%) sepia(40%) !important;
+  filter: hue-rotate(-50deg) saturate(132%) opacity(98%) sepia(40%) !important;
   padding: 0px;
 }
 
@@ -223,9 +226,10 @@ h3 {
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0 auto;
-  background-color: rgb(142, 221, 204);
+  background-color: rgb(249, 229, 239);
   border-radius: 10px;
   width: 420px;
+  max-width: 80%;
   align-items: stretch;
   justify-content: space-around;
 }
@@ -238,22 +242,36 @@ h3 {
   margin-top: calc(-1 * var(--bs-gutter-y));
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 450px;
 }
 
-#forecast {
-  font-family: "Baloo 2", cursive;
-  text-align: center;
-  font-size: 18px;
-  color: #156b7f;
+#icons {
+  filter: hue-rotate(-50deg) saturate(132%) opacity(98%) sepia(40%) !important;
 }
-.weather-forecast-temperatures {
+#forecast {
+  font-family: "Square Peg", cursive;
+  font-weight: 200;
+  text-align: center;
+  font-size: 29px;
+  color: rgb(41, 91, 109);
+}
+.weather-forecast-temperature-max {
   font-family: "Baloo 2", cursive;
   color: #7a2c86;
   filter: none;
+  line-height: normal;
+  text-align: center;
+  font-size: 18px;
+}
+
+.weather-forecast-temperature-min {
+  font-family: "Baloo 2", cursive;
+  color: #b271bb;
+  filter: none;
   text-align: center;
   font-size: 16px;
+  font-style: italic;
 }
 
 .ref {
