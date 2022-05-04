@@ -97,7 +97,7 @@ function displayWeatherCondition(response) {
   windspeed.innerHTML = `Wind-speed ${speedCity} m/h`;
 
   let description = document.querySelector("#description");
-  let descriptionCity = response.data.weather[0].main;
+  let descriptionCity = response.data.weather[0].description;
   description.innerHTML = `${descriptionCity}`;
 
   let todayicon = document.querySelector("#today-icon");
